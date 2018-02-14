@@ -60,9 +60,14 @@
         <hr class="star-light">
         <h5 class="font-weight-light mb-0">
           <p>
-            Hello World. My name is Victor Padilla, Software Engineer and Mathematician from Northern Illinois University.
-            I'm an object oriented programmer with Java and C++ as the main languages to program. Looking to code somewhere that keeps the work challenging. Interested in Data and Analytics, Back-end Web Development and Software Development.  
+            Hello World. I'm a Software Engineer and Mathematician from Northern Illinois University. Love working on challenging material and something that always keeps me thinking. Interested in BigData, Artificial Intelligence and Back-end Web and Software Development.
           </p>
+          <p style="display:none;" id="moreabout">
+            Hello World. I'm a Software Engineer and Mathematician from Northern Illinois University. Love working on challenging material and something that always keeps me thinking. Interested in BigData, Artificial Intelligence and Back-end Web and Software Development.
+          </p>
+
+          <u><a onclick="getElementById('moreabout').style = 'display:block;'; getElementById('morebutton').style = 'display:none;';getElementById('lessbutton').style = 'display:block;'" id="morebutton">More about</a></u>
+          <u><a style="display:none;" onclick="getElementById('moreabout').style = 'display:none;'; getElementById('morebutton').style = 'display:block;';getElementById('lessbutton').style = 'display:none;'" id="lessbutton">Less about</a></u>
         </h5>
       </div>
     </header>
