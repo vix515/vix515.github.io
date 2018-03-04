@@ -108,7 +108,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/ipa.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -339,10 +339,12 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Repair Center (iOS)</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <video width="50%" controls>
+                <source src="videos/ios_video.mov" type="video/mp4">
+              </video>
+              <p class="mb-5">This project conists of a mock app that can help a repair shop track orders. The user is requested to login at the beginning of the app, where the app connects to a database and authenticates the user credentials. The first option the user is presented with is the option to put in a new order. In here we can enter a new repair ticket with the customer's information and the information of the device. Once submitted the user can go view pending orders, or orders that have already been updated. Orders can be updated through out the process of the reapir until the repiar ticket it closed.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
@@ -364,7 +366,15 @@
               <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
               <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <ul style="text-align:left;">
+                <li>Simulated a "FAT-12" on a (very small) disk. Each block is 512 bytes in size. With FAT-12, we have 4096 blocks, so the disk is only 2 MB in size. Starting with an empty root directory a series of transactions were carried out.</li>
+                <li>Simulated a memory management program. Where a process is loaded into memory or a process requests a block of memory dynamically, the system allocates memory, and when a process terminates or frees memory previously requested, the system deallocates memory.
+
+                It was assumed that we have a small computer with only 16 MB of memory.  We assumed that the operating system uses the first 3 MB, leaving 13 MB for applications.  Starting at that point, we will process several kinds of transactions: Load a process into memory. Allocate a block of memory dynamically. Deallocate a block obtained earlier. Terminate a process, freeing all its memory</li>
+                <li>Implemented a microshell in C++, used several system calls under Linux including fork(), pipe() and dup().</li>
+                <li></li>
+                <li></li>
+              </ul>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
