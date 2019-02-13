@@ -1,140 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Victor Padilla</title>
+  <title>Victor Padilla</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
 
-  </head>
+  <style>
 
-  <body id="page-top">
+    div.portfolio-item-button-selected{
+        background-color: #2D74CA;
+        color:white;
+        border-radius: 15px;
+        text-align: center;
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Victor Padilla</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Experience</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Profiencies</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resume.pdf">Resume</a>
-            </li>
-          </ul>
-        </div>
+      }
+
+      div.portfolio-item-button-unselected{
+        background-color: #f2f2f2f2;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      div.portfolio-item-button-unselected:hover{
+        color: #2D74CA;
+        background-color: #e6e6e6;
+      }
+
+      p{
+        font-family: 'Raleway', sans-serif;
+        font-weight:300;
+      }
+
+    </style>
+
+  <style>
+    .scroll-div::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      .scroll-div::-webkit-scrollbar-thumb {
+        background:    #2F3E4E;
+        border-radius: 10px;
+      }
+
+      .scroll-div::-webkit-scrollbar-thumb:hover {
+        background:  #003366;
+      }
+
+      .scroll-div{
+        overflow-y: scroll;
+      }
+
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Victor Padilla</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Experience</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Profiencies</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="Resume.pdf">Resume</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="Victor Padilla" style="width:300px;height:300px;">
-        <h1 class="text-uppercase mb-0">Victor Padilla</h1>
-        <hr class="star-light">
-        <h5 class="font-weight-light mb-0">
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4">
+          <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="Victor Padilla" style="width:300px;height:300px;">
+          <h4>Software Engineer</h4>
+          <h4>Mathematician</h4>
+
+        </div>
+        <div class="col-sm-12 col-lg-8 scroll-div" style="max-height: 420px;">
           <p style="text-align: left;">
-            Software Engineer and Mathematician from Northern Illinois University. As a mathematician problem solving has always been an interest to me and has helped me develop necessary skills to create great software. I'm experienced in creating reliable, maintainable, and secure code. Love working on challenging projects that help me further develop my critical thinking and programming skills. I believe that code has global impact and I would like to one day be part of an impactful source code.
+            Software Engineer and Mathematician from Northern Illinois University. As a mathematician problem solving has always been an interest to me and has helped me develop necessary skills to create great software. I'm experienced in
+            creating
+            reliable, maintainable, and secure code. Love working on challenging projects that help me further develop my critical thinking and programming skills. I believe that code has global impact and I would like to one day be part of an
+            impactful source code.
           </p>
-          <br>
           <p style="text-align: left;">
-            I’m looking to work for a company who values innovation and challenges me to grow as a professional. I ‘m a quick learner and always enjoy the process of learning something new. Being the only full stack web developer for the previous company allowed me to grow my skills immensely, but truncated my team building skills that I can’t wait to start developing in a professional environment.
+            While pursuing my education at NIU I felt that the core courses where tied down to coding only in C++. So I decided to broaden my skills and not only focus on a certain skill or language. From coding in assembly and python to developing
+            iOS apps,
+            I’ve always found interest in learning something new and challenging. Java and C++ are my core programming languages and have strong competitive skills in web development with PHP, Javascript and MySQL.
           </p>
-          <br>
-          <p style="text-align: left;">
-            Loving all aspects of technology and software development  I’m looking for any opportunity that allows me to work closely with exciting projects. From work in web development, and keep growing my current skills, to working in software that takes advantage of my strong Java and C++ skills. I’m open to discuss any opportunity that allows me to grow in a professional environment. Being a mathematician data science positions and anything that deals with large sets of data and statistics always sound fascinating.
+          <p style="text-align: left;" hidden>
+            Loving all aspects of technology and software development I’m looking for any opportunity that allows me to work closely with exciting projects. From work in web development, and keep growing my current skills, to working in software
+            that takes advantage of my strong Java and C++ skills. I’m open to discuss any opportunity that allows me to grow in a professional environment. Being a mathematician data science positions and anything that deals with large sets of
+            data
+            and statistics always sound fascinating.
           </p>
-          <br>
           <br>
           <p style="text-align: left; display:none;" id="moreabout">
-            While pursuing my education at NIU I felt that the core courses where tied down to coding only in C++. So I decided to broaden my skills and not only focus on a certain skill or language.  From coding in assembly to developing iOS apps, I’ve always found interest in learning something new and challenging. Java and C++ are my core programming languages and have strong competitive skills in web development with PHP, Javascript and MySQL.
+            I’m looking to work for a company who values innovation and challenges me to grow as a professional. I ‘m a quick learner and always enjoy the process of learning something new. Being the only full stack web developer for the previous
+            company allowed me to grow my skills immensely, but truncated my team building skills that I can’t wait to start developing in a professional environment.
             <br>
             <br>
-            After graduation I took a position as a full stack web developer. Being the only developer in the charge of the project I was able to learn and grow my skills very quick.  Working previously with PHP and MySQL I decided this was the best route to have a working web app in no time. I started working with bootstrap so that the website would be responsive and accessible through many devices. Not wanting to spend too much time on setting up an interface from zero, I started working from a bootstrap template. With the interface ready I moved onto setting up the databases. I had to learn good database management habits to keep the information clutter free and coherent. Using PHP to communicate with the databases and JQuery/Javascript to help display and transfer data I was able to finish the website in about 8 months.  Being a full stack web developer was challenging but the most satisfying part of the project was the user feedback and how the company employees interacted with the web site. I was able to communicate directly with the employees and make changes that were reflected within minutes.
+            After graduation I took a position as a full stack web developer. Being the only developer in the charge of the project I was able to learn and grow my skills very quick. Working previously with PHP and MySQL I decided this was the
+            best
+            route to have a working web app in no time. I started working with bootstrap so that the website would be responsive and accessible through many devices. Not wanting to spend too much time on setting up an interface from zero, I
+            started
+            working from a bootstrap template. With the interface ready I moved onto setting up the databases. I had to learn good database management habits to keep the information clutter free and coherent. Using PHP to communicate with the
+            databases and JQuery/Javascript to help display and transfer data I was able to finish the website in about 8 months. Being a full stack web developer was challenging but the most satisfying part of the project was the user feedback
+            and
+            how the company employees interacted with the web site. I was able to communicate directly with the employees and make changes that were reflected within minutes.
           </p>
 
-          <a onclick="getElementById('moreabout').style = 'text-align: left;display:block;'; getElementById('morebutton').style = 'display:none;';getElementById('lessbutton').style = 'display:block;'" id="morebutton"><i class="fa fa-plus-circle"></i> <u>More about</u></a>
-          <a style="display:none;" onclick="getElementById('moreabout').style = 'display:none;'; getElementById('morebutton').style = 'display:block;';getElementById('lessbutton').style = 'display:none;'" id="lessbutton"><i class="fa fa-minus-circle"></i><u>Less about</u></a>
-        </h5>
+          <a onclick="getElementById('moreabout').style = 'text-align: left;display:block;'; getElementById('morebutton').style = 'display:none;';getElementById('lessbutton').style = 'display:block;'" id="morebutton"><i class="fa fa-plus-circle"></i>
+            <u>More about</u></a>
+          <a style="display:none;" onclick="getElementById('moreabout').style = 'display:none;'; getElementById('morebutton').style = 'display:block;';getElementById('lessbutton').style = 'display:none;'" id="lessbutton"><i class="fa fa-minus-circle"></i><u>Less
+              about</u></a>
+        </div>
       </div>
-    </header>
+  </header>
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+  <!-- Portfolio Grid Section
+  <section class="portfoolio" id="portfoolio" hidden>
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fa fa-search-plus fa-3x"></i>
               </div>
-              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/java.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+            </div>
+            <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/java.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fa fa-search-plus fa-3x"></i>
               </div>
-              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/java.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+            </div>
+            <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/java.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fa fa-search-plus fa-3x"></i>
               </div>
-              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/ipa.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
+            </div>
+            <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/ipa.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                <i class="fa fa-search-plus fa-3x"></i>
               </div>
-              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/cpp.png" alt="">
-            </a>
-          </div>
-          <!--div class="col-md-6 col-lg-4">
+            </div>
+            <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/cpp.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -143,252 +211,320 @@
               </div>
               <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/php.png" alt="">
             </a>
-          </div-->
-          <div class="col-md-6 col-lg-4">
-            <a href="https://github.com/vix515">
-              <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/github.png" alt="">
-            </a>
-          </div>
+          </div
+        <div class="col-md-6 col-lg-4">
+          <a href="https://github.com/vix515">
+            <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="img/portfolio/github.png" alt="">
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section> -->
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Work Experience</h2>
-        <br>
-        <div class="row">
-          <div class="col-lg-12 ml-auto">
-            <h3>GM Wireless</h3>
-            <h5><sup>Web App Developer - June 2017 . November 2018</sup></h5>
-            <hr style="border-color: white; border-style: solid; border-width: 2px;">
-            <ul style="text-align:left;">
-              <li>Solely developed a web portal where employees can access business tools with unique logins and secure session ids.</li>
-              <li>For easy access and cross platform support the web-portal was implemented with bootstrap.</li>
-              <li>Managed the company’s data with MySQL, implementing clean data management with relational development.</li>
-              <li>Created customer profiles allowing the business to track customer’s orders and repair orders.</li>
-              <li>Deployed the portal in stages and observed how the user would interact with the platform making changes as issues came up. Allow for everyone to give me feedback and started the observation cycle until performance and satisfaction were met.</li>
-              <li>Constantly check on errors and try to get user feedback on such issue and impact on performance for the business.</li>
-            </ul>
-          </div>
-          <div class="col-lg-12 ml-auto">
-            <h3>GM Wireless</h3>
-            <h5><sup>Business Management- May 2015 . 2018</sup></h5>
-            <hr style="border-color: white; border-style: solid; border-width: 2px;">
-            <ul style="text-align:left;">
-              <li>Planned and deploy new business strategies to keep meeting and exceeding goals</li>
-              <li>Brought new technologies to the business that helped employees be more efficient</li>
-              <li>Advised the company’s president on many monetary decisions and how to effectively disbursed budgets</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Proficiencies</h2>
-      <hr class="star-dark mb-8">
-      <div class="container">
-        <h2>Java</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
-        <h2>C++</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
-        <h2>MySQL</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5><h5>
+  <!-- Portfolio Grid Section 2-->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-sm-12 col-lg-3" style="display:flex; align-items:center; flex-direction:column; justify-content:center;">
+          <div style="width:100%;">
+            <div class="portfolio-item-button-selected" id="portfolio-item-java">
+              <h1>Java</h1>
+            </div>
+            <hr>
+            <div class="portfolio-item-button-unselected" id="portfolio-item-cpp">
+              <h1>C++</h1>
+            </div>
+            <hr>
+            <div class="portfolio-item-button-unselected" id="portfolio-item-php">
+              <h3>Fullstack WEB</h3>
+            </div>
+            <hr>
+            <div class="portfolio-item-button-unselected" id="portfolio-item-swift">
+              <h1>Swift</h1>
             </div>
           </div>
-        <br>
-        <h2>Web Development</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-          </div>
         </div>
-        <div class="row">
-            <div class="col" style="text-align: right;">
-              <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
-        <h2>PHP</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
-        <h2>iOS / Swift</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5><h5>
+        <div class="col-sm-12 col-lg-9" id="portfolio-details">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <div class="container text-center" id="portfolio-item-java-details">
+                <div class="row">
+                  <div class="col-lg-12 mx-auto">
+                    <h5 class="text-secondary text-uppercase mb-0">Multithreading</h5>
+                    <hr>
+                    <div class="row">
+                      <div class="col-lg-6 mx-auto">
+                        <video width="100%" controls>
+                          <source src="videos/Assignment5_video.mov" type="video/mp4">
+                        </video>
+                        <a href="https://github.com/vix515/NIU-Undergrad-Course-Work/tree/master/NIU_CSCI_Java/Assignment5/src">Github <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+                        <p class="mb-5" style="text-align:left;">This project took advantage of Java multithreading capabilities. User is able to create unique (objects) balls of different sizes and colors. Each ball has its own speed and bounces
+                          around the screen
+                          independently by being a signle thread in the program. We are able to sort through the objects and change their speeds, cut and paste, and delete. We can also export the balls to a file and import them back into the
+                          program.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 mx-auto">
+                        <h5 style="text-align:right;" id="java-two"> Next Java Project <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-           <div class="col" style="text-align: right;">
-              <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
           </div>
         </div>
-        <br>
-        <h2>Javascript</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
-        <h2>Assembly</h2>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-          <div class="col" style="text-align: right;">
-            <h5></h5>
-          </div>
-        </div>
-        <br>
       </div>
-    </section>
+  </section>
+  </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <!--div class="container">
+  <!-- About Section -->
+  <section class="bg-primary text-white mb-0" id="about">
+    <div class="container">
+      <h2 class="text-center text-uppercase text-white">Work Experience</h2>
+      <br>
+      <div class="row">
+        <div class="col-lg-12 ml-auto">
+          <h3>GM Wireless</h3>
+          <h5><sup>Web App Developer - June 2017 . November 2018</sup></h5>
+          <hr style="border-color: white; border-style: solid; border-width: 2px;">
+          <ul style="text-align:left;">
+            <li>Solely developed a web portal where employees can access business tools with unique logins and secure session ids.</li>
+            <li>For easy access and cross platform support the web-portal was implemented with bootstrap.</li>
+            <li>Managed the company’s data with MySQL, implementing clean data management with relational development.</li>
+            <li>Created customer profiles allowing the business to track customer’s orders and repair orders.</li>
+            <li>Deployed the portal in stages and observed how the user would interact with the platform making changes as issues came up. Allow for everyone to give me feedback and started the observation cycle until performance and satisfaction
+              were met.</li>
+            <li>Constantly check on errors and try to get user feedback on such issue and impact on performance for the business.</li>
+          </ul>
+        </div>
+        <div class="col-lg-12 ml-auto">
+          <h3>GM Wireless</h3>
+          <h5><sup>Business Management- May 2015 . 2018</sup></h5>
+          <hr style="border-color: white; border-style: solid; border-width: 2px;">
+          <ul style="text-align:left;">
+            <li>Planned and deploy new business strategies to keep meeting and exceeding goals</li>
+            <li>Brought new technologies to the business that helped employees be more efficient</li>
+            <li>Advised the company’s president on many monetary decisions and how to effectively disbursed budgets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="text-center text-uppercase text-secondary mb-0">Proficiencies</h2>
+    <hr class="star-dark mb-8">
+    <div class="container">
+      <h2>Java</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>C++</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>MySQL</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5>
+            <h5>
+        </div>
+      </div>
+      <br>
+      <h2>Web Development</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>PHP</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>iOS / Swift</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5>
+            <h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>Javascript</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+      <h2>Assembly</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+        <div class="col" style="text-align: right;">
+          <h5></h5>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <!--div class="container">
         <h2 class="text-center text-uppercase text-white">Contact Me</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto"-->
-      <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-      <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-      <!--form name="sentMessage" id="contactForm" novalidate="novalidate">
+    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+    <!--form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Name</label>
@@ -426,223 +562,517 @@
           </div>
         </div>
       </div-->
-      <div class="container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Contact</h4>
+          <a class="lead mb-0" href="mailto:victorp515@gmail.com">Victorp515@gmail.com</a>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Connect</h4>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/vi515/">
+                <i class="fa fa-fw fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/vix515">
+                <i class="fa fa-fw fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/vix_515/">
+                <i class="fa fa-fw fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn btn-outline-light btn-social text-center rounded-circle" href="Resume.pdf">
+                <i class="fa fa-fw fa-file"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; victorpadilla.me 2019</small>
+    </div>
+    <div>Icons by <a href="http://www.freepik.com" title="Freepik">Freepik, </a> <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> @ <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      , licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
         <div class="row">
-          <div class="col-md-6 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Contact</h4>
-            <a class="lead mb-0" href="mailto:victorp515@gmail.com">Victorp515@gmail.com</a>
-          </div>
-          <div class="col-md-6 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Connect</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/vi515/">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/vix515">
-                  <i class="fa fa-fw fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/vix_515/">
-                  <i class="fa fa-fw fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="Resume.pdf">
-                  <i class="fa fa-fw fa-file"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Prisoners Dilemma (Java)</h2>
+            <hr class="star-dark mb-5">
+            <video width="100%" controls>
+              <source src="videos/Assignment4_video.mov" type="video/mp4">
+            </video>
+            <p class="mb-5">Implemented a UI for a user to play the Prisoners Dilemma game. The game mode is provided through a dropdown menu, the user can also select from a file with preset choices for the computer. For user experience, parts of
+              the screen are gray
+              out during the game to focus the user on where to play the game. Results are store in a file and displayed once the user requests it.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
           </div>
         </div>
       </div>
-    </footer>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; victorpadilla.me 2019</small>
-      </div>
-      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik, </a> <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
-        licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-      </div>
-
     </div>
+  </div>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
       </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Bouncing Balls (Java)</h2>
+            <hr class="star-dark mb-5">
+            <video width="100%" controls>
+              <source src="videos/Assignment5_video.mov" type="video/mp4">
+            </video>
+            <p class="mb-5">This project took advantage of Java multithreading capabilities. User is able to create unique (objects) balls of different sizes and colors. Each ball has its own speed and bounces around the screen independently by
+              being a signle thread
+              in the program. We are able to sort through the objects and change their speeds, cut and paste, and delete. We can also export the balls to a file and import them back into the program. </p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Portfolio Modals -->
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Repair Center (iOS)</h2>
+            <hr class="star-dark mb-5">
+            <video width="50%" controls>
+              <source src="videos/ios_video.mov" type="video/mp4">
+            </video>
+            <p class="mb-5">This project conists of a mock app that can help a repair shop track orders. The user is requested to login at the beginning of the app, where the app connects to a database and authenticates the user credentials. The
+              first option the user
+              is presented with is the option to put in a new order. In here we can enter a new repair ticket with the customer's information and the information of the device. Once submitted the user can go view pending orders, or orders that have
+              already been updated. Orders can be updated through out the process of the reapir until the repiar ticket it closed.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/cpp.png" alt="">
+            <ul style="text-align:left;">
+              <li>Simulated a "FAT-12" on a (very small) disk. Each block is 512 bytes in size. With FAT-12, we have 4096 blocks, so the disk is only 2 MB in size. Starting with an empty root directory a series of transactions were carried out.</li>
+              <li>Simulated a memory management program. Where a process is loaded into memory or a process requests a block of memory dynamically, the system allocates memory, and when a process terminates or frees memory previously requested, the
+                system
+                deallocates memory. It was assumed that we have a small computer with only 16 MB of memory. We assumed that the operating system uses the first 3 MB, leaving 13 MB for applications. Starting at that point, we will process several
+                kinds
+                of transactions: Load a process into memory. Allocate a block of memory dynamically. Deallocate a block obtained earlier. Terminate a process, freeing all its memory</li>
+              <li>Implemented a microshell in C++, used several system calls under Linux including fork(), pipe() and dup().</li>
+            </ul>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+              consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+    <div class="portfolio-modal-dialog bg-white">
+      <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+        <i class="fa fa-3x fa-times"></i>
+      </a>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+            <hr class="star-dark mb-5">
+            <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+              consequuntur itaque. Nam.</p>
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+              <i class="fa fa-close"></i>
+              Close Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Detailed Page JAVA two-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-java-details-two">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">Java Interface Elements</h5>
+          <hr>
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Prisoners Dilemma (Java)</h2>
-              <hr class="star-dark mb-5">
+            <div class="col-lg-6 mx-auto">
               <video width="100%" controls>
                 <source src="videos/Assignment4_video.mov" type="video/mp4">
               </video>
-              <p class="mb-5">Implemented a UI for a user to play the Prisoners Dilemma game. The game mode is provided through a dropdown menu, the user can also select from a file with preset choices for the computer. For user experience, parts of the screen are gray
-                out during the game to focus the user on where to play the game. Results are store in a file and displayed once the user requests it.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+              <a href="https://github.com/vix515/NIU-Undergrad-Course-Work/tree/master/NIU_CSCI_Java/Assignment4/src">Github <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">Implemented a UI for a user to play the Prisoners Dilemma game. The game mode is provided through a dropdown menu, the user can also select from a file with preset choices for the computer. For
+                user experience, parts of the screen are gray out during the game to focus the user on where to play the game. Results are store in a file and displayed once the user requests it.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:left;" id="java-one"> <i class="fa fa-angle-left" aria-hidden="true"></i>
+                Previous Java Project
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
+  <!-- Portfolio Detailed Page java one -->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-java-details">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">Multithreading</h5>
+          <hr>
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Bouncing Balls (Java)</h2>
-              <hr class="star-dark mb-5">
+            <div class="col-lg-6 mx-auto">
               <video width="100%" controls>
                 <source src="videos/Assignment5_video.mov" type="video/mp4">
               </video>
-              <p class="mb-5">This project took advantage of Java multithreading capabilities. User is able to create unique (objects) balls of different sizes and colors. Each ball has its own speed and bounces around the screen independently by being a signle thread
-                in the program. We are able to sort through the objects and change their speeds, cut and paste, and delete. We can also export the balls to a file and import them back into the program. </p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+              <a href="https://github.com/vix515/NIU-Undergrad-Course-Work/tree/master/NIU_CSCI_Java/Assignment5/src">Github <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">This project took advantage of Java multithreading capabilities. User is able to create unique (objects) balls of different sizes and colors. Each ball has its own speed and bounces
+                around the screen
+                independently by being a signle thread in the program. We are able to sort through the objects and change their speeds, cut and paste, and delete. We can also export the balls to a file and import them back into the program.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:right;" id="java-two"> Next Java Project <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
+  <!-- Portfolio Detailed Page Swift one-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-swift-details">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">Repair Center (iOS)</h5>
+          <hr>
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Repair Center (iOS)</h2>
-              <hr class="star-dark mb-5">
+            <div class="col-lg-6 mx-auto">
               <video width="50%" controls>
                 <source src="videos/ios_video.mov" type="video/mp4">
               </video>
-              <p class="mb-5">This project conists of a mock app that can help a repair shop track orders. The user is requested to login at the beginning of the app, where the app connects to a database and authenticates the user credentials. The first option the user
-                is presented with is the option to put in a new order. In here we can enter a new repair ticket with the customer's information and the information of the device. Once submitted the user can go view pending orders, or orders that have
-                already been updated. Orders can be updated through out the process of the reapir until the repiar ticket it closed.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+            </div>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">
+                This project is a mock app that allows a cellphone repair shop track and uodate repair information. The app connects to real online MySQL database and retrieves and stores its data there.
+                <br>
+                The user is presented with a form to enter a new repair order or the user can simply choose from a category from the navigation menu at the bottom. The repair tickets have status' and are categorized accordingly in the nav menu.
+                <br>
+                Once the user selects a category to get the repair from the user can updated the repair ticket's status, price and add comments. When the user updates the order the order gets updated in the database and the panels are refreshed to
+                update with the new data from the datase.
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cpp.png" alt="">
-              <ul style="text-align:left;">
-                <li>Simulated a "FAT-12" on a (very small) disk. Each block is 512 bytes in size. With FAT-12, we have 4096 blocks, so the disk is only 2 MB in size. Starting with an empty root directory a series of transactions were carried out.</li>
-                <li>Simulated a memory management program. Where a process is loaded into memory or a process requests a block of memory dynamically, the system allocates memory, and when a process terminates or frees memory previously requested, the system
-                  deallocates memory. It was assumed that we have a small computer with only 16 MB of memory. We assumed that the operating system uses the first 3 MB, leaving 13 MB for applications. Starting at that point, we will process several kinds
-                  of transactions: Load a process into memory. Allocate a block of memory dynamically. Deallocate a block obtained earlier. Terminate a process, freeing all its memory</li>
-                <li>Implemented a microshell in C++, used several system calls under Linux including fork(), pipe() and dup().</li>
-              </ul>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:right;"></h5>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
+  <!-- Portfolio Detailed Page CPP one-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-cpp-details">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">MicroShell</h5>
+          <hr>
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+            <div class="col-lg-6 mx-auto">
+              <img src="img/portfolio/microshell.png" width="99%"></img>
+              <a href="https://github.com/vix515/NIU-Undergrad-Course-Work/tree/master/NIU_CSCI480_SystemInfo/Assignment3">Github <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">
+                Programmed a microshell in C++ that is able to take user input and process it accordingly. When the microshell is run the user is shown a shell input where the program waits for the user to type a command. Once the command is type we
+                run the user's input and check if they want to do a single process or maybe they want to pipe something so we do multiple processes. The program is able to use piping in the example, we display an usorted list then pipe the output to
+                a sorting function and we get a sorted list. If there are process errors we are able to catch them and display them accordingly. To quit a special command was coded and the user can quit with either 'q' or "quit".
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:right;" id="cpp-two"> Next CPP Project <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Portfolio Detailed Page CPP two-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-cpp-details-two">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">Process Scheduler</h5>
+          <hr>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <img src="img/portfolio/process_scheduling.png" width="99%">
+              <a href="">Github <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            </a>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">
+                Programmed a simulated process scheduler to handle requests made by a list of processes. The list includes the name of the process, its execution period, the amount of input and output time it needs and when to terminated. We count
+                CPU bursts and I/O bursts and record the data to print a detail summary at the end. We use the processes given priority to executed when the CPU has other processes waiting. All of the processes "objects" are handle with deques, to
+                make it easier to push, delete and edit process information.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:left;" id="cpp-one"> <i class="fa fa-angle-left" aria-hidden="true"></i> Previous CPP Project
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Portfolio Detailed Page CPP three-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-cpp-details">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">MicroShell</h5>
+          <hr>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <img src="img/portfolio/microshell.png" width="99%">
+            </div>
+            <a href="">Github <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique lectus sit amet nunc fermentum, nec porttitor nulla tristique. Fusce pulvinar ante arcu, vitae sodales neque sagittis in. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus. Mauris mi risus, viverra vel convallis vitae, aliquam in lacus. Integer in eros non velit laoreet bibendum nec vel felis. Aenean tempor mattis est quis dignissim. Phasellus lobortis et tortor ullamcorper
+                interdum. Donec tristique purus in mauris ornare venenatis. Morbi sed ultricies eros. Nam sagittis quam quis lacus sagittis, vitae tempus arcu convallis. Praesent molestie pellentesque lorem maximus sodales.
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+                Morbi ac magna et nulla semper finibus vel eu est. Fusce elementum nunc varius congue consectetur. Aenean iaculis nibh sapien, sed molestie purus pharetra et. Pellentesque tincidunt semper euismod. Donec risus odio, finibus ac
+                ullamcorper vel, auctor a mauris. Vivamus et condimentum sem. Aliquam erat volutpat. Integer accumsan, enim nec condimentum maximus, libero massa ullamcorper dui, sit amet molestie velit justo quis mi. Pellentesque pellentesque,
+                metus ut lacinia rhoncus, diam ipsum tincidunt lorem, ut volutpat quam risus et mi. Sed nec tortor euismod magna faucibus egestas sed vitae nisi. Curabitur at ipsum eros. Fusce eget volutpat libero, vel convallis tortor. Etiam
+                consectetur nulla pretium lectus tempus auctor.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:right;"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+  <!-- Portfolio Detailed Page CPP three-->
+  <div hidden>
+    <div class="container text-center" id="portfolio-item-php-details">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <h5 class="text-secondary text-uppercase mb-0">PHP and Javascript</h5>
+          <hr>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <img src="img/portfolio/gmwportal1.png" width="99%">
+            </div>
+            </a>
+            <div class="col-lg-6 mx-auto scroll-div" style="max-height: 420px;">
+              <p class="mb-5" style="text-align:left;">
+                This website is a tool for the employees of GMW to be able to track customer orders, sales goals, repairs tickets and more. It also serves as a point where management can store financial information and run reports for the time
+                period
+                they like.
+                <br><br>
+                The website's interface is build with bootstrap and was deployed with multi-device usage in mind. The employee can login through a tablet, phone or desktop and be able to navigate the website without a compatibility problem. In the
+                backend the data is process with PHP and stored in MySQL databases. Through out the website jQuery is run and for smooth data input/output Ajax is used.
+                <br><br>
+                Having security in mind the website is protected from SQL-injection attacks or just simple employee typos. Storing passwords and customer data should always be a security concern no matter the size of the company. The users
+                passwords are stored and access using PHP's password hashing functions.
+                <br><br>
+                The page counts with an auto-logout javascript code where if there is not activity the users account is closed by closing the PHP session. Every time the user logins it creates a random security token that is store in the database.
+                This
+                token is periodically check for and if the user logins from a different device the token is changed and previous sessions auto logouts due to having different tokens.
+                <br><br>
+                The employees are created with titles and certain pages only allow for access to certain titles. Like the financial page only allows for managers to access it or the sales page can not be access by technicians.
+                <br><br>
+                As a previous employee of the company I knew the kind of tool that was necessary for everyday use and what was the most necessary. Building this website onsite was crucial as I was able to get immediate feedback from the employees
+                and correct errors within minutes. This was the project that has given me the most experience and thus far the most fun.
 
-  </body>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 style="text-align:right;"></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+  <!--Custom Jquery-->
+  <script>
+    $("[class^=portfolio-item-button]").click(function() {
+      var item = $(this).attr('id') + "-details";
+      $("[class^=portfolio-item-button]").attr('class', "portfolio-item-button-unselected");
+      $(this).attr('class', "portfolio-item-button-selected");
+      $("#portfolio-details").empty();
+      $("#" + item).clone().prependTo("#portfolio-details");
+      //s$("#portfolio-details").html($(["id=" + item]).html());
+    });
+  </script>
+
+  <script>
+    $(document).on("click", "[id^=java-two]", function() {
+      $("#portfolio-details").empty();
+      $("#portfolio-item-java-details-two").clone().prependTo("#portfolio-details");
+      //s$("#portfolio-details").html($(["id=" + item]).html());
+    });
+
+    $(document).on("click", "[id^=java-one]", function() {
+      $("#portfolio-details").empty();
+      $("#portfolio-item-java-details").clone().prependTo("#portfolio-details");
+      //s$("#portfolio-details").html($(["id=" + item]).html());
+    });
+
+    $(document).on("click", "[id^=cpp-two]", function() {
+      $("#portfolio-details").empty();
+      $("#portfolio-item-cpp-details-two").clone().prependTo("#portfolio-details");
+      //s$("#portfolio-details").html($(["id=" + item]).html());
+    });
+
+    $(document).on("click", "[id^=cpp-one]", function() {
+      $("#portfolio-details").empty();
+      $("#portfolio-item-cpp-details").clone().prependTo("#portfolio-details");
+      //s$("#portfolio-details").html($(["id=" + item]).html());
+    });
+  </script>
+  <script>
+
+  </script>
+
+</body>
 
 </html>
